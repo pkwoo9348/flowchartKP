@@ -1,49 +1,256 @@
-<mxfile host="app.diagrams.net" modified="2023-05-02T06:57:46.780Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36" version="21.2.1" etag="i7GV_E98UKPLRxBTC5Do" type="github">
+<mxfile host="app.diagrams.net" modified="2023-05-10T02:11:58.950Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36" etag="iajrKmrYlnDzMvW5Cn36" version="21.2.9" type="github" pages="3">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
-    <mxGraphModel dx="1223" dy="898" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1434" dy="796" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-0" />
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-1" parent="WIyWlLk6GJQsqaUBKTNV-0" />
-        <mxCell id="WIyWlLk6GJQsqaUBKTNV-2" value="" style="rounded=0;html=1;jettySize=auto;orthogonalLoop=1;fontSize=11;endArrow=block;endFill=0;endSize=8;strokeWidth=1;shadow=0;labelBackgroundColor=none;edgeStyle=orthogonalEdgeStyle;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="WIyWlLk6GJQsqaUBKTNV-3" target="WIyWlLk6GJQsqaUBKTNV-6" edge="1">
+        <mxCell id="LfgiUwp_R-64w-xYoYRU-2" value="&lt;font style=&quot;font-size: 30px;&quot;&gt;수집기V1&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry width="150" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="LfgiUwp_R-64w-xYoYRU-3" value="https://api.bithumb.com/public/candlestick/{coin.coin_name}/1m" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="40" y="50" width="370" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="LfgiUwp_R-64w-xYoYRU-4" value="코인 별 1분, 3분, 5분, 10분, 30분, 1시간, 6 |시간, 12시간, 24시간 데이터 수신" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="165" y="120" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="LfgiUwp_R-64w-xYoYRU-5" value="현재 코인 가격, 거래량, 거래 대금 추출" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="180" y="240" width="270" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="LfgiUwp_R-64w-xYoYRU-6" value="&lt;div&gt;현재 주가 이동 평균추출&lt;/div&gt;&lt;div&gt;(이동평균선 = N개의&lt;/div&gt;&lt;div&gt;가격/N)&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="180" y="330" width="270" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="LfgiUwp_R-64w-xYoYRU-7" value="&lt;div&gt;현재 이격도 추출&lt;/div&gt;&lt;div&gt;((( N개 봄에 대한 평균 가격-해당 봄에 대&lt;/div&gt;&lt;div&gt;한 가격) / N) * 100&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="180" y="430" width="270" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="LfgiUwp_R-64w-xYoYRU-8" value="&lt;div&gt;현재 macd 추출&lt;/div&gt;&lt;div&gt;(MACD = 단기지수이동평균 - 장기지수이동 평균&lt;/div&gt;&lt;div&gt;Signal Line = MACD의 n일 지수이동평균 MACD&amp;nbsp;&lt;/div&gt;&lt;div&gt;오실레이터 =&lt;span style=&quot;background-color: initial;&quot;&gt;MACD - Signal Line의 막대 그래프)&lt;/span&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="180" y="525" width="270" height="85" as="geometry" />
+        </mxCell>
+        <mxCell id="LfgiUwp_R-64w-xYoYRU-9" value="&lt;div&gt;nc_p_min_current_price_t nc_p_coin_3min_current_price_t&lt;/div&gt;&lt;div&gt;nc_p_coin_5min_current_price_t&lt;/div&gt;&lt;div&gt;nc_p_coin_10min_current_price_t&lt;/div&gt;&lt;div&gt;nc_p_coin_30min_current_price_t&lt;/div&gt;&lt;div&gt;nc_p_coin_1h_current_price_t&lt;/div&gt;&lt;div&gt;nc_p_coin_6h_current_price_t&lt;/div&gt;&lt;div&gt;nc_p_coin 12h_current_price_t&lt;/div&gt;&lt;div&gt;nc_p_coin_1d_current_price_t&lt;/div&gt;" style="swimlane;whiteSpace=wrap;html=1;startSize=130;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="600" y="50" width="200" height="230" as="geometry" />
+        </mxCell>
+        <mxCell id="LfgiUwp_R-64w-xYoYRU-10" value="&lt;div&gt;coin_name &lt;span style=&quot;white-space: pre;&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;	&lt;/span&gt;:&lt;span style=&quot;background-color: initial;&quot;&gt;코인명&lt;/span&gt;&lt;/div&gt;&lt;div&gt;time&amp;nbsp;&lt;span style=&quot;white-space: pre;&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;	&lt;/span&gt;:&lt;span style=&quot;background-color: initial;&quot;&gt;시간&lt;/span&gt;&lt;/div&gt;&lt;div&gt;price &lt;span style=&quot;white-space: pre;&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;	&lt;/span&gt;:가격&lt;/div&gt;&lt;div&gt;volume&amp;nbsp; &lt;span style=&quot;white-space: pre;&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;	&lt;/span&gt;:거래량&lt;/div&gt;&lt;div&gt;transaction_amount :거래대금&amp;nbsp;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="LfgiUwp_R-64w-xYoYRU-9">
+          <mxGeometry x="5" y="130" width="190" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="LfgiUwp_R-64w-xYoYRU-11" value="&lt;div&gt;nc_p_min_masp_t&lt;/div&gt;&lt;div&gt;nc_p_coin_3min_masp_t&lt;/div&gt;&lt;div&gt;nc_p_coin_5min_masp_t&lt;/div&gt;&lt;div&gt;nc_p_coin 10min_masp_t&lt;/div&gt;&lt;div&gt;nc_p_coin_30min_masp_t&lt;/div&gt;&lt;div&gt;nc_p_coin_1h_masp_t&lt;/div&gt;&lt;div&gt;nc_p_coin_6h_masp_t&lt;/div&gt;&lt;div&gt;nc_p_coin 12h_masp_t&lt;/div&gt;&lt;div&gt;nc_p_coin_1d_masp_t&lt;/div&gt;" style="swimlane;whiteSpace=wrap;html=1;startSize=130;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="600" y="310" width="200" height="230" as="geometry" />
+        </mxCell>
+        <mxCell id="LfgiUwp_R-64w-xYoYRU-12" value="&lt;div&gt;coin_name &lt;span style=&quot;white-space: pre;&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;	&lt;/span&gt;:&lt;span style=&quot;background-color: initial;&quot;&gt;코인명&lt;/span&gt;&lt;/div&gt;&lt;div&gt;time&amp;nbsp;&lt;span style=&quot;white-space: pre;&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;	&lt;/span&gt;:&lt;span style=&quot;background-color: initial;&quot;&gt;시간&lt;/span&gt;&lt;/div&gt;&lt;div&gt;price &lt;span style=&quot;white-space: pre;&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;	&lt;/span&gt;:가격&lt;/div&gt;&lt;div&gt;volume&amp;nbsp; &lt;span style=&quot;white-space: pre;&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;	&lt;/span&gt;:거래량&lt;/div&gt;&lt;div&gt;transaction_amount :거래대금&amp;nbsp;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="LfgiUwp_R-64w-xYoYRU-11">
+          <mxGeometry x="5" y="130" width="190" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="LfgiUwp_R-64w-xYoYRU-13" value="&lt;div&gt;nc_p_min_disparity_t&lt;/div&gt;&lt;div&gt;nc_p_coin_3min_disparity_t&lt;/div&gt;&lt;div&gt;nc_p_coin_5min_disparity_t&lt;/div&gt;&lt;div&gt;nc_p_coin_10min_disparity_t&lt;/div&gt;&lt;div&gt;nc_p_coin_30min_disparity_t&lt;/div&gt;&lt;div&gt;nc_p_coin_1h disparity_t&lt;/div&gt;&lt;div&gt;nc_p_coin_6h_disparity_t&lt;/div&gt;&lt;div&gt;nc_p_coin_12h_disparity_t&lt;/div&gt;&lt;div&gt;nc_p_coin_1d_masp_t&lt;/div&gt;" style="swimlane;whiteSpace=wrap;html=1;startSize=130;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="600" y="550" width="200" height="230" as="geometry" />
+        </mxCell>
+        <mxCell id="LfgiUwp_R-64w-xYoYRU-14" value="&lt;div&gt;coin_name &lt;span style=&quot;white-space: pre;&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;	&lt;/span&gt;:&lt;span style=&quot;background-color: initial;&quot;&gt;코인명&lt;/span&gt;&lt;/div&gt;&lt;div&gt;time&amp;nbsp;&lt;span style=&quot;white-space: pre;&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;	&lt;/span&gt;:&lt;span style=&quot;background-color: initial;&quot;&gt;시간&lt;/span&gt;&lt;/div&gt;&lt;div&gt;disparity&lt;span style=&quot;white-space: pre;&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;	&lt;/span&gt;:이격도&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="600" y="700" width="170" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="LfgiUwp_R-64w-xYoYRU-15" value="&lt;div&gt;nc_p_min_macd_t nc_p_coin_3min_macd_t&lt;/div&gt;&lt;div&gt;nc_p_coin_5min_macd_t&lt;/div&gt;&lt;div&gt;nc_p_coin_10min_macd_t&lt;/div&gt;&lt;div&gt;nc_p_coin_30min_macd_t&lt;/div&gt;&lt;div&gt;nc_p_coin_1h_macd_t&lt;/div&gt;&lt;div&gt;nc_p_coin_6h_macd_t&lt;/div&gt;&lt;div&gt;nc_p_coin 12h_macd_t&lt;/div&gt;&lt;div&gt;nc_p_coin_1d_macd_t&lt;/div&gt;" style="swimlane;whiteSpace=wrap;html=1;startSize=130;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="600" y="810" width="220" height="260" as="geometry" />
+        </mxCell>
+        <mxCell id="LfgiUwp_R-64w-xYoYRU-16" value="&lt;div&gt;coin_name &lt;span style=&quot;white-space: pre;&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;&quot;&gt;	&lt;/span&gt;:&lt;span style=&quot;background-color: initial;&quot;&gt;코인명&lt;/span&gt;&lt;/div&gt;&lt;div&gt;time&amp;nbsp;&lt;span style=&quot;&quot;&gt;	&lt;span style=&quot;white-space: pre;&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;&quot;&gt;	&lt;/span&gt;&lt;/span&gt;&lt;span style=&quot;&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;&quot;&gt;	&lt;/span&gt;:&lt;span style=&quot;background-color: initial;&quot;&gt;시간&lt;/span&gt;&lt;/div&gt;&lt;div&gt;macd&lt;span style=&quot;&quot;&gt;	&lt;span style=&quot;white-space: pre;&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;&quot;&gt;	&lt;/span&gt;&lt;/span&gt;&lt;span style=&quot;&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;&quot;&gt;	&lt;/span&gt;:macd&lt;/div&gt;&lt;div&gt;macdShort &lt;span style=&quot;white-space: pre;&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;	&lt;/span&gt;&amp;nbsp;:macd 숏&amp;nbsp;&lt;span style=&quot;&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;&quot;&gt;	&lt;/span&gt;&amp;nbsp;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;macdLong &lt;span style=&quot;white-space: pre;&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;	&lt;/span&gt;&amp;nbsp;:macd 롱&lt;/span&gt;&lt;/div&gt;&lt;div&gt;macdSignal&lt;span style=&quot;white-space: pre;&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;	&lt;/span&gt;&amp;nbsp;:macd 시그널&lt;br&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="LfgiUwp_R-64w-xYoYRU-15">
+          <mxGeometry x="10" y="140" width="210" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="LfgiUwp_R-64w-xYoYRU-18" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="LfgiUwp_R-64w-xYoYRU-3" target="LfgiUwp_R-64w-xYoYRU-4">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="390" y="440" as="sourcePoint" />
+            <mxPoint x="440" y="390" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LfgiUwp_R-64w-xYoYRU-19" value="" style="endArrow=classic;html=1;rounded=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="LfgiUwp_R-64w-xYoYRU-4" target="LfgiUwp_R-64w-xYoYRU-8">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="390" y="440" as="sourcePoint" />
+            <mxPoint x="440" y="390" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="80" y="150" />
+              <mxPoint x="80" y="568" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LfgiUwp_R-64w-xYoYRU-20" value="" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" target="LfgiUwp_R-64w-xYoYRU-5">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="80" y="270" as="sourcePoint" />
+            <mxPoint x="440" y="390" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LfgiUwp_R-64w-xYoYRU-21" value="" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" target="LfgiUwp_R-64w-xYoYRU-6">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="80" y="360" as="sourcePoint" />
+            <mxPoint x="440" y="390" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LfgiUwp_R-64w-xYoYRU-22" value="" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" target="LfgiUwp_R-64w-xYoYRU-7">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="80" y="460" as="sourcePoint" />
+            <mxPoint x="440" y="390" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LfgiUwp_R-64w-xYoYRU-23" value="" style="endArrow=classic;html=1;rounded=0;entryX=-0.01;entryY=0.4;entryDx=0;entryDy=0;entryPerimeter=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="LfgiUwp_R-64w-xYoYRU-5" target="LfgiUwp_R-64w-xYoYRU-9">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="390" y="440" as="sourcePoint" />
+            <mxPoint x="440" y="390" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="560" y="270" />
+              <mxPoint x="560" y="142" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LfgiUwp_R-64w-xYoYRU-24" value="" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="LfgiUwp_R-64w-xYoYRU-6" target="LfgiUwp_R-64w-xYoYRU-11">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="390" y="440" as="sourcePoint" />
+            <mxPoint x="440" y="390" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="560" y="360" />
+              <mxPoint x="560" y="425" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LfgiUwp_R-64w-xYoYRU-25" value="" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="LfgiUwp_R-64w-xYoYRU-7" target="LfgiUwp_R-64w-xYoYRU-13">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="390" y="440" as="sourcePoint" />
+            <mxPoint x="440" y="390" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="560" y="460" />
+              <mxPoint x="560" y="665" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LfgiUwp_R-64w-xYoYRU-26" value="" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="LfgiUwp_R-64w-xYoYRU-8" target="LfgiUwp_R-64w-xYoYRU-15">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="390" y="740" as="sourcePoint" />
+            <mxPoint x="440" y="690" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="520" y="568" />
+              <mxPoint x="520" y="940" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="HafkZLz3MlrtWq2J5H5v" name="페이지-2">
+    <mxGraphModel dx="1434" dy="796" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="vPSfPbEHJsvblIJYVWXg-1" value="&lt;font style=&quot;font-size: 30px;&quot;&gt;﻿수집기V2&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry width="150" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="vPSfPbEHJsvblIJYVWXg-9" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="vPSfPbEHJsvblIJYVWXg-2" target="vPSfPbEHJsvblIJYVWXg-3">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="WIyWlLk6GJQsqaUBKTNV-3" value="Lamp doesn&#39;t work" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
-          <mxGeometry x="160" y="80" width="120" height="40" as="geometry" />
+        <mxCell id="vPSfPbEHJsvblIJYVWXg-2" value="https://api.bithumb.com/public/candlestick/{coin.coin_name}/1m" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="60" width="340" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="WIyWlLk6GJQsqaUBKTNV-4" value="Yes" style="rounded=0;html=1;jettySize=auto;orthogonalLoop=1;fontSize=11;endArrow=block;endFill=0;endSize=8;strokeWidth=1;shadow=0;labelBackgroundColor=none;edgeStyle=orthogonalEdgeStyle;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="WIyWlLk6GJQsqaUBKTNV-6" target="WIyWlLk6GJQsqaUBKTNV-10" edge="1">
-          <mxGeometry y="20" relative="1" as="geometry">
-            <mxPoint as="offset" />
+        <mxCell id="vPSfPbEHJsvblIJYVWXg-3" value="코인 별 1분, 3분, 5분, 10분, 30분, 1시간, 6시간, 12시간, 24시간 데이터 수신" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="150" y="120" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="vPSfPbEHJsvblIJYVWXg-4" value="&lt;div&gt;현재 코인 시가, 종가, 고가, 저가, 거래량, 거&lt;span style=&quot;background-color: initial;&quot;&gt;래 대금 추출&lt;/span&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="130" y="240" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="vPSfPbEHJsvblIJYVWXg-5" value="&lt;div&gt;nc_p_coin_min_current_price_t&lt;/div&gt;&lt;div&gt;nc_p_coin_3min_current_price_t&lt;/div&gt;&lt;div&gt;nc_p_coin_5min_current_price_t&lt;/div&gt;&lt;div&gt;|nc_p_coin_10min_current_price_t&lt;/div&gt;&lt;div&gt;|nc_p_coin_30min_current_price_t&lt;/div&gt;&lt;div&gt;nc_p_coin_1h_current_price_t&lt;/div&gt;&lt;div&gt;nc_p_coin_6h_current_price_t&lt;/div&gt;&lt;div&gt;nc_p_coin_12h_current_price_t&lt;/div&gt;&lt;div&gt;nc_p_coin_1d_current_price_t&lt;/div&gt;" style="swimlane;whiteSpace=wrap;html=1;startSize=140;" vertex="1" parent="1">
+          <mxGeometry x="570" y="90" width="200" height="270" as="geometry" />
+        </mxCell>
+        <mxCell id="vPSfPbEHJsvblIJYVWXg-6" value="&lt;div&gt;coin_name&lt;span style=&quot;white-space: pre;&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;	&lt;/span&gt;:코인 명&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;Stime&lt;span style=&quot;white-space: pre;&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;	&lt;/span&gt;:&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;시간&lt;/span&gt;&lt;/div&gt;&lt;div&gt;Open&lt;span style=&quot;white-space: pre;&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;	&lt;/span&gt;:&lt;span style=&quot;background-color: initial;&quot;&gt;시가&lt;/span&gt;&lt;/div&gt;&lt;div&gt;Close&lt;span style=&quot;white-space: pre;&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;	&lt;/span&gt;:&lt;span style=&quot;background-color: initial;&quot;&gt;종가&lt;/span&gt;&lt;/div&gt;&lt;div&gt;High&lt;span style=&quot;white-space: pre;&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;	&lt;/span&gt;:&lt;span style=&quot;background-color: initial;&quot;&gt;고가&lt;/span&gt;&lt;/div&gt;&lt;div&gt;Low&lt;span style=&quot;white-space: pre;&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;	&lt;/span&gt;:&lt;span style=&quot;background-color: initial;&quot;&gt;저가&lt;/span&gt;&lt;/div&gt;&lt;div&gt;Volume&lt;span style=&quot;white-space: pre;&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;	&lt;/span&gt;:&lt;span style=&quot;background-color: initial;&quot;&gt;거래량&lt;/span&gt;&lt;/div&gt;&lt;div&gt;transaction amount ::거래대금&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="580" y="228" width="180" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="vPSfPbEHJsvblIJYVWXg-7" value="" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="vPSfPbEHJsvblIJYVWXg-3" target="vPSfPbEHJsvblIJYVWXg-4">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="110" y="170" as="sourcePoint" />
+            <mxPoint x="520" y="100" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="80" y="150" />
+              <mxPoint x="80" y="270" />
+            </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="WIyWlLk6GJQsqaUBKTNV-5" value="No" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;jettySize=auto;orthogonalLoop=1;fontSize=11;endArrow=block;endFill=0;endSize=8;strokeWidth=1;shadow=0;labelBackgroundColor=none;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="WIyWlLk6GJQsqaUBKTNV-6" target="WIyWlLk6GJQsqaUBKTNV-7" edge="1">
-          <mxGeometry y="10" relative="1" as="geometry">
-            <mxPoint as="offset" />
+        <mxCell id="vPSfPbEHJsvblIJYVWXg-8" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="vPSfPbEHJsvblIJYVWXg-2" target="vPSfPbEHJsvblIJYVWXg-3">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="470" y="150" as="sourcePoint" />
+            <mxPoint x="520" y="100" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="WIyWlLk6GJQsqaUBKTNV-6" value="Lamp&lt;br&gt;plugged in?" style="rhombus;whiteSpace=wrap;html=1;shadow=0;fontFamily=Helvetica;fontSize=12;align=center;strokeWidth=1;spacing=6;spacingTop=-4;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
-          <mxGeometry x="170" y="170" width="100" height="80" as="geometry" />
-        </mxCell>
-        <mxCell id="WIyWlLk6GJQsqaUBKTNV-7" value="Plug in lamp" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
-          <mxGeometry x="320" y="190" width="120" height="40" as="geometry" />
-        </mxCell>
-        <mxCell id="WIyWlLk6GJQsqaUBKTNV-8" value="No" style="rounded=0;html=1;jettySize=auto;orthogonalLoop=1;fontSize=11;endArrow=block;endFill=0;endSize=8;strokeWidth=1;shadow=0;labelBackgroundColor=none;edgeStyle=orthogonalEdgeStyle;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="WIyWlLk6GJQsqaUBKTNV-10" target="WIyWlLk6GJQsqaUBKTNV-11" edge="1">
-          <mxGeometry x="0.3333" y="20" relative="1" as="geometry">
-            <mxPoint as="offset" />
+        <mxCell id="vPSfPbEHJsvblIJYVWXg-10" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="vPSfPbEHJsvblIJYVWXg-4" target="vPSfPbEHJsvblIJYVWXg-5">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="470" y="150" as="sourcePoint" />
+            <mxPoint x="520" y="100" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="400" y="270" />
+              <mxPoint x="400" y="225" />
+            </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="WIyWlLk6GJQsqaUBKTNV-9" value="Yes" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;jettySize=auto;orthogonalLoop=1;fontSize=11;endArrow=block;endFill=0;endSize=8;strokeWidth=1;shadow=0;labelBackgroundColor=none;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="WIyWlLk6GJQsqaUBKTNV-10" target="WIyWlLk6GJQsqaUBKTNV-12" edge="1">
-          <mxGeometry y="10" relative="1" as="geometry">
-            <mxPoint as="offset" />
-          </mxGeometry>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="Ip6RC1hUQ018-32-bPcB" name="페이지-3">
+    <mxGraphModel dx="1434" dy="796" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="4Epe9ra23bm6ymHrPzO7-1" value="&lt;div&gt;nc_p_min_current_price_t nc_p_coin_3min_current_price_t&lt;/div&gt;&lt;div&gt;nc_p_coin_5min_current_price_t&lt;/div&gt;&lt;div&gt;nc_p_coin_10min_current_price_t&lt;/div&gt;&lt;div&gt;nc_p_coin_30min_current_price_t&lt;/div&gt;&lt;div&gt;nc_p_coin_1h_current_price_t&lt;/div&gt;&lt;div&gt;nc_p_coin_6h_current_price_t&lt;/div&gt;&lt;div&gt;nc_p_coin 12h_current_price_t&lt;/div&gt;&lt;div&gt;nc_p_coin_1d_current_price_t&lt;/div&gt;" style="swimlane;whiteSpace=wrap;html=1;startSize=130;" vertex="1" parent="1">
+          <mxGeometry x="20" y="80" width="220" height="230" as="geometry" />
         </mxCell>
-        <mxCell id="WIyWlLk6GJQsqaUBKTNV-10" value="Bulb&lt;br&gt;burned out?" style="rhombus;whiteSpace=wrap;html=1;shadow=0;fontFamily=Helvetica;fontSize=12;align=center;strokeWidth=1;spacing=6;spacingTop=-4;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
-          <mxGeometry x="170" y="290" width="100" height="80" as="geometry" />
+        <mxCell id="4Epe9ra23bm6ymHrPzO7-2" value="&lt;div&gt;coin_name &lt;span style=&quot;white-space: pre;&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;	&lt;/span&gt;:&lt;span style=&quot;background-color: initial;&quot;&gt;코인명&lt;/span&gt;&lt;/div&gt;&lt;div&gt;time&amp;nbsp;&lt;span style=&quot;white-space: pre;&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;	&lt;/span&gt;:&lt;span style=&quot;background-color: initial;&quot;&gt;시간&lt;/span&gt;&lt;/div&gt;&lt;div&gt;price &lt;span style=&quot;white-space: pre;&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;	&lt;/span&gt;:가격&lt;/div&gt;&lt;div&gt;volume&amp;nbsp; &lt;span style=&quot;white-space: pre;&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;	&lt;/span&gt;:거래량&lt;/div&gt;&lt;div&gt;transaction_amount :거래대금&amp;nbsp;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="4Epe9ra23bm6ymHrPzO7-1">
+          <mxGeometry x="5" y="130" width="190" height="90" as="geometry" />
         </mxCell>
-        <mxCell id="WIyWlLk6GJQsqaUBKTNV-11" value="Repair Lamp" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
-          <mxGeometry x="160" y="430" width="120" height="40" as="geometry" />
+        <mxCell id="4Epe9ra23bm6ymHrPzO7-3" value="&lt;div&gt;nc_p_min_masp_t&lt;/div&gt;&lt;div&gt;nc_p_coin_3min_masp_t&lt;/div&gt;&lt;div&gt;nc_p_coin_5min_masp_t&lt;/div&gt;&lt;div&gt;nc_p_coin 10min_masp_t&lt;/div&gt;&lt;div&gt;nc_p_coin_30min_masp_t&lt;/div&gt;&lt;div&gt;nc_p_coin_1h_masp_t&lt;/div&gt;&lt;div&gt;nc_p_coin_6h_masp_t&lt;/div&gt;&lt;div&gt;nc_p_coin 12h_masp_t&lt;/div&gt;&lt;div&gt;nc_p_coin_1d_masp_t&lt;/div&gt;" style="swimlane;whiteSpace=wrap;html=1;startSize=130;" vertex="1" parent="1">
+          <mxGeometry x="20" y="330" width="220" height="230" as="geometry" />
         </mxCell>
-        <mxCell id="WIyWlLk6GJQsqaUBKTNV-12" value="Replace Bulb" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
-          <mxGeometry x="320" y="310" width="120" height="40" as="geometry" />
+        <mxCell id="4Epe9ra23bm6ymHrPzO7-4" value="&lt;div&gt;coin_name &lt;span style=&quot;white-space: pre;&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;	&lt;/span&gt;:&lt;span style=&quot;background-color: initial;&quot;&gt;코인명&lt;/span&gt;&lt;/div&gt;&lt;div&gt;time&amp;nbsp;&lt;span style=&quot;white-space: pre;&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;	&lt;/span&gt;:&lt;span style=&quot;background-color: initial;&quot;&gt;시간&lt;/span&gt;&lt;/div&gt;&lt;div&gt;price &lt;span style=&quot;white-space: pre;&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;	&lt;/span&gt;:가격&lt;/div&gt;&lt;div&gt;volume&amp;nbsp; &lt;span style=&quot;white-space: pre;&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;	&lt;/span&gt;:거래량&lt;/div&gt;&lt;div&gt;transaction_amount :거래대금&amp;nbsp;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="4Epe9ra23bm6ymHrPzO7-3">
+          <mxGeometry x="5" y="130" width="190" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="4Epe9ra23bm6ymHrPzO7-5" value="&lt;div&gt;nc_p_min_disparity_t&lt;/div&gt;&lt;div&gt;nc_p_coin_3min_disparity_t&lt;/div&gt;&lt;div&gt;nc_p_coin_5min_disparity_t&lt;/div&gt;&lt;div&gt;nc_p_coin_10min_disparity_t&lt;/div&gt;&lt;div&gt;nc_p_coin_30min_disparity_t&lt;/div&gt;&lt;div&gt;nc_p_coin_1h disparity_t&lt;/div&gt;&lt;div&gt;nc_p_coin_6h_disparity_t&lt;/div&gt;&lt;div&gt;nc_p_coin_12h_disparity_t&lt;/div&gt;&lt;div&gt;nc_p_coin_1d_masp_t&lt;/div&gt;" style="swimlane;whiteSpace=wrap;html=1;startSize=130;" vertex="1" parent="1">
+          <mxGeometry x="20" y="580" width="220" height="230" as="geometry" />
+        </mxCell>
+        <mxCell id="4Epe9ra23bm6ymHrPzO7-6" value="&lt;div&gt;coin_name &lt;span style=&quot;white-space: pre;&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;	&lt;/span&gt;:&lt;span style=&quot;background-color: initial;&quot;&gt;코인명&lt;/span&gt;&lt;/div&gt;&lt;div&gt;time&amp;nbsp;&lt;span style=&quot;white-space: pre;&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;	&lt;/span&gt;:&lt;span style=&quot;background-color: initial;&quot;&gt;시간&lt;/span&gt;&lt;/div&gt;&lt;div&gt;disparity&lt;span style=&quot;white-space: pre;&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;	&lt;/span&gt;:이격도&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="20" y="730" width="170" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="4Epe9ra23bm6ymHrPzO7-7" value="&lt;div&gt;nc_p_min_macd_t nc_p_coin_3min_macd_t&lt;/div&gt;&lt;div&gt;nc_p_coin_5min_macd_t&lt;/div&gt;&lt;div&gt;nc_p_coin_10min_macd_t&lt;/div&gt;&lt;div&gt;nc_p_coin_30min_macd_t&lt;/div&gt;&lt;div&gt;nc_p_coin_1h_macd_t&lt;/div&gt;&lt;div&gt;nc_p_coin_6h_macd_t&lt;/div&gt;&lt;div&gt;nc_p_coin 12h_macd_t&lt;/div&gt;&lt;div&gt;nc_p_coin_1d_macd_t&lt;/div&gt;" style="swimlane;whiteSpace=wrap;html=1;startSize=130;" vertex="1" parent="1">
+          <mxGeometry x="20" y="830" width="220" height="260" as="geometry" />
+        </mxCell>
+        <mxCell id="4Epe9ra23bm6ymHrPzO7-8" value="&lt;div&gt;coin_name &lt;span style=&quot;white-space: pre;&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;&quot;&gt;	&lt;/span&gt;:&lt;span style=&quot;background-color: initial;&quot;&gt;코인명&lt;/span&gt;&lt;/div&gt;&lt;div&gt;time&amp;nbsp;&lt;span style=&quot;&quot;&gt;	&lt;span style=&quot;white-space: pre;&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;&quot;&gt;	&lt;/span&gt;&lt;/span&gt;&lt;span style=&quot;&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;&quot;&gt;	&lt;/span&gt;:&lt;span style=&quot;background-color: initial;&quot;&gt;시간&lt;/span&gt;&lt;/div&gt;&lt;div&gt;macd&lt;span style=&quot;&quot;&gt;	&lt;span style=&quot;white-space: pre;&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;&quot;&gt;	&lt;/span&gt;&lt;/span&gt;&lt;span style=&quot;&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;&quot;&gt;	&lt;/span&gt;:macd&lt;/div&gt;&lt;div&gt;macdShort &lt;span style=&quot;white-space: pre;&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;	&lt;/span&gt;&amp;nbsp;:macd 숏&amp;nbsp;&lt;span style=&quot;&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;&quot;&gt;	&lt;/span&gt;&amp;nbsp;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;macdLong &lt;span style=&quot;white-space: pre;&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;	&lt;/span&gt;&amp;nbsp;:macd 롱&lt;/span&gt;&lt;/div&gt;&lt;div&gt;macdSignal&lt;span style=&quot;white-space: pre;&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;	&lt;/span&gt;&amp;nbsp;:macd 시그널&lt;br&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="4Epe9ra23bm6ymHrPzO7-7">
+          <mxGeometry x="10" y="140" width="210" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="4Epe9ra23bm6ymHrPzO7-9" value="&lt;font style=&quot;font-size: 30px;&quot;&gt;조건탐색 V1&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry width="190" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="4Epe9ra23bm6ymHrPzO7-10" value="현재 사용 조건 가져오기" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="354" y="30" width="136" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="4Epe9ra23bm6ymHrPzO7-11" value="&lt;div&gt;현재 사용 조건 중 현재 가격 or 거래량 or&amp;nbsp;&lt;/div&gt;&lt;div&gt;거래 대금 조건 존재&amp;nbsp;&lt;/div&gt;" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="260" y="90" width="260" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="4Epe9ra23bm6ymHrPzO7-13" value="&lt;div style=&quot;font-size: 10px;&quot;&gt;&lt;font style=&quot;font-size: 10px;&quot;&gt;주가 범위:&amp;nbsp;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 10px;&quot;&gt;&lt;font style=&quot;font-size: 10px;&quot;&gt;주가 등락률:&amp;nbsp;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 10px;&quot;&gt;&lt;font style=&quot;font-size: 10px;&quot;&gt;(( 종목의 종가 - 종목의 과거 종가)&amp;nbsp;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 10px;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font style=&quot;font-size: 10px;&quot;&gt;* 종목의 종가 ) / 100&amp;nbsp;&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 10px;&quot;&gt;&lt;font style=&quot;font-size: 10px;&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 10px;&quot;&gt;&lt;font style=&quot;font-size: 10px;&quot;&gt;거래 대금:&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 10px;&quot;&gt;&lt;font style=&quot;font-size: 10px;&quot;&gt;거래량 * 거래 금액 = 거래 대금&lt;/font&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="647" y="80" width="180" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="4Epe9ra23bm6ymHrPzO7-14" value="&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;현재 가격 or 거래량 or&amp;nbsp;&lt;span style=&quot;background-color: initial;&quot;&gt;거래 대금&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&amp;nbsp;으로 코인 필터&lt;/span&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="330" y="200" width="150" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="4Epe9ra23bm6ymHrPzO7-15" value="&lt;div&gt;현재 사용 조건 중 이동 평균&lt;/div&gt;&lt;div&gt;값 비교 조건 존재&lt;/div&gt;" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="260" y="320" width="260" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="4Epe9ra23bm6ymHrPzO7-16" value="&lt;div style=&quot;font-size: 10px;&quot;&gt;&lt;font style=&quot;font-size: 10px;&quot;&gt;이동평균선:.&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 10px;&quot;&gt;&lt;font style=&quot;font-size: 10px;&quot;&gt;(( 단기 이평값 – 장기 이평값 ) * 단기 이평값 ) /100&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 10px;&quot;&gt;&lt;font style=&quot;font-size: 10px;&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 10px;&quot;&gt;&lt;font style=&quot;font-size: 10px;&quot;&gt;주가이동 평균 2개 비교:&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 10px;&quot;&gt;&lt;div&gt;&lt;font style=&quot;font-size: 10px;&quot;&gt;첫 번째 단기 이평값 &amp;gt; / &amp;lt; 장기 이평값&amp;nbsp;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 10px;&quot;&gt;두 번째 단기 이평값 &amp;gt; / &amp;lt; 장기 이평값&amp;nbsp;&lt;/font&gt;&lt;/div&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 10px;&quot;&gt;&lt;font style=&quot;font-size: 10px;&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 10px;&quot;&gt;&lt;font style=&quot;font-size: 10px;&quot;&gt;이동 평균 이격도:&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 10px;&quot;&gt;&lt;div&gt;&lt;font style=&quot;font-size: 10px;&quot;&gt;하한 범위 값&amp;nbsp; &amp;lt;&amp;nbsp;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 10px;&quot;&gt;(( 단기 이평선 - 장기 이평선 ) / 단기 이평선 ) * 100&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font style=&quot;font-size: 10px;&quot;&gt;&amp;lt; 상승 범위 값&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 10px;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font style=&quot;font-size: 10px;&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 10px;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font style=&quot;font-size: 10px;&quot;&gt;주가 이동 평균 추세&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 10px;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font style=&quot;font-size: 10px;&quot;&gt;&lt;div&gt;사용자 지정 봉 종가 - N범위의 평균값 &amp;lt; 0 하락추세&lt;/div&gt;&lt;div&gt;사용자 지정 봉 종가 - N범위의 평균값 &amp;gt; 0 상승추세&lt;/div&gt;&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 10px;&quot;&gt;&lt;font style=&quot;font-size: 10px;&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 10px;&quot;&gt;&lt;br&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="577" y="320" width="250" height="220" as="geometry" />
+        </mxCell>
+        <mxCell id="4Epe9ra23bm6ymHrPzO7-17" value="&lt;div&gt;이격도 데이터로 코&lt;span style=&quot;background-color: initial;&quot;&gt;인 필터&lt;/span&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="330" y="690" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="4Epe9ra23bm6ymHrPzO7-18" value="&lt;div&gt;현재 사용 조건 중 이격도&amp;nbsp;&lt;span style=&quot;background-color: initial;&quot;&gt;값 비교 조건 존재&lt;/span&gt;&lt;/div&gt;" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="260" y="580" width="260" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="4Epe9ra23bm6ymHrPzO7-19" value="&lt;div style=&quot;font-size: 10px;&quot;&gt;&lt;font style=&quot;font-size: 10px;&quot;&gt;이격도 기준값 돌파:&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 10px;&quot;&gt;&lt;font style=&quot;font-size: 10px;&quot;&gt;(( 해당 봉에 대한 평균 값-해당 봉에 대한 값 )&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 10px;&quot;&gt;&lt;font style=&quot;font-size: 10px;&quot;&gt;&amp;nbsp;/ 해당 봉에 대한 평균 값 ) * 100&amp;nbsp;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 10px;&quot;&gt;&lt;font style=&quot;font-size: 10px;&quot;&gt;&amp;gt; 사용자 지정 기준 값&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 10px;&quot;&gt;&lt;font style=&quot;font-size: 10px;&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 10px;&quot;&gt;&lt;font style=&quot;font-size: 10px;&quot;&gt;이격도 기준값 범위&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 10px;&quot;&gt;&lt;font style=&quot;font-size: 10px;&quot;&gt;&lt;div&gt;하한 값 &amp;lt;&amp;nbsp;&lt;span style=&quot;background-color: initial;&quot;&gt;이격도&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&amp;lt; 상한 값&lt;/span&gt;&lt;/div&gt;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 10px;&quot;&gt;&lt;font style=&quot;font-size: 10px;&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 10px;&quot;&gt;&lt;font style=&quot;font-size: 10px;&quot;&gt;이격도 기준값 이상 이하&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 10px;&quot;&gt;&lt;font style=&quot;font-size: 10px;&quot;&gt;(( 해당 봉에 대한 평균 값-해당 봉에 대한 값 )&amp;nbsp;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 10px;&quot;&gt;&lt;font style=&quot;font-size: 10px;&quot;&gt;/ 해당 봉에 대한 평균 값 ) * 100&amp;nbsp;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 10px;&quot;&gt;&lt;font style=&quot;font-size: 10px;&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 10px;&quot;&gt;&lt;font style=&quot;font-size: 10px;&quot;&gt;이격도 추세&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 10px;&quot;&gt;&lt;font style=&quot;font-size: 10px;&quot;&gt;&lt;div&gt;사용자 지정 봉 종가 - N범위의 평균값 &amp;lt; 0 하락추세&lt;/div&gt;&lt;div&gt;사용자 지정 봉 종가 - N범위의 평균값 &amp;gt; 0 상승추세&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 10px;&quot;&gt;&lt;font style=&quot;font-size: 10px;&quot;&gt;이격도 반전&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 10px;&quot;&gt;&lt;div style=&quot;&quot;&gt;&lt;font style=&quot;font-size: 10px;&quot;&gt;사용자 지정 봉 종가 - N범위의 평균값 &amp;lt; 0 하락추세&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;font style=&quot;font-size: 10px;&quot;&gt;사용자 지정 봉 종가 - N범위의 평균값 &amp;gt; 0 상승추세&lt;/font&gt;&lt;/div&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="577" y="570" width="250" height="240" as="geometry" />
+        </mxCell>
+        <mxCell id="4Epe9ra23bm6ymHrPzO7-20" value="&lt;div&gt;이동 평균 데이터로 코&lt;/div&gt;&lt;div&gt;인 필터&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="330" y="460" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="4Epe9ra23bm6ymHrPzO7-21" value="&lt;div&gt;macd 데이터로 코인&lt;span style=&quot;background-color: initial;&quot;&gt;필터&lt;/span&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="330" y="940" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="4Epe9ra23bm6ymHrPzO7-22" value="&lt;div&gt;현재 사용 조건 중 macd&amp;nbsp;&lt;span style=&quot;background-color: initial;&quot;&gt;값 비교 조건 존재&lt;/span&gt;&lt;/div&gt;" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="260" y="830" width="260" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="4Epe9ra23bm6ymHrPzO7-23" value="&lt;div style=&quot;font-size: 10px;&quot;&gt;&lt;div style=&quot;font-size: 10px;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;MACD = 단기지수이동평균 - 장기지수이동평균&lt;/span&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;font-size: 10px;&quot;&gt;Signal Line = MACD의 n일 지수이동평균&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;font-size: 10px;&quot;&gt;MACD 오실레이터 = MACD - Signal Line의 막대 그래프&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 10px;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 10px;&quot;&gt;macd 기준선 돌파&lt;/div&gt;&lt;div style=&quot;font-size: 10px;&quot;&gt;사용자 지정 값 &amp;lt; macd 지표&lt;/div&gt;&lt;div style=&quot;font-size: 10px;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 10px;&quot;&gt;macd 기준선 비교:&lt;/div&gt;&lt;div style=&quot;font-size: 10px;&quot;&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;사용자 지정 값, macd 지표 비교&lt;/div&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;&lt;/div&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 10px;&quot;&gt;macd 기준값 돌파&lt;/div&gt;&lt;div style=&quot;font-size: 10px;&quot;&gt;macd N선 &amp;lt; macd 지표&amp;nbsp;&amp;nbsp;&lt;/div&gt;&lt;div style=&quot;font-size: 10px;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 10px;&quot;&gt;macd 기준값 이상 이하:&lt;/div&gt;&lt;div style=&quot;font-size: 10px;&quot;&gt;macd N선 &amp;lt;= macd 지표&amp;nbsp;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 10px;&quot;&gt;macd N선 &amp;gt;= macd 지표&amp;nbsp;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 10px;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 10px;&quot;&gt;macd 기준값 범위&lt;/div&gt;&lt;div style=&quot;font-size: 10px;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 10px;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 10px;&quot;&gt;macd 추세&lt;/div&gt;&lt;div style=&quot;font-size: 10px;&quot;&gt;macd 반전&lt;/div&gt;&lt;div style=&quot;font-size: 10px;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="557" y="825" width="270" height="290" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
