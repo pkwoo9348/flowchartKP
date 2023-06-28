@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-06-28T04:53:16.685Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" etag="sJ2Ppn5dnpdRZB9i9-fT" version="21.3.8" type="github">
+<mxfile host="app.diagrams.net" modified="2023-06-28T04:53:57.848Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" etag="g6hZxqBuazkKDGs2dRN-" version="21.3.8" type="github">
   <diagram name="페이지-1" id="mmvQYBgrxXGQUSbG8u3t">
     <mxGraphModel dx="1434" dy="796" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -8,10 +8,12 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="7lKn_I1DQ2fhY-NwoqA_-1" value="주문 리스트 select" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="80" y="40" width="120" height="40" as="geometry" />
+          <mxGeometry x="90" y="40" width="120" height="40" as="geometry" />
         </mxCell>
         <mxCell id="7lKn_I1DQ2fhY-NwoqA_-3" value="" style="swimlane;startSize=0;" vertex="1" parent="1">
-          <mxGeometry x="80" y="120" width="690" height="410" as="geometry" />
+          <mxGeometry x="80" y="120" width="690" height="470" as="geometry">
+            <mxRectangle x="80" y="120" width="50" height="40" as="alternateBounds" />
+          </mxGeometry>
         </mxCell>
         <mxCell id="7lKn_I1DQ2fhY-NwoqA_-4" value="주문 리스트 주문 순회" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="7lKn_I1DQ2fhY-NwoqA_-3">
           <mxGeometry x="550" width="140" height="30" as="geometry" />
