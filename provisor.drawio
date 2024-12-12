@@ -1,9 +1,111 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36" version="24.9.3">
   <diagram name="페이지-1" id="CUrCBeQfquTf-SFFq8XS">
-    <mxGraphModel>
+    <mxGraphModel dx="220544" dy="156369" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="4" edge="1" parent="1" source="2" target="3" />
+        <mxCell id="6" edge="1" parent="1" source="3" target="5" />
+        <mxCell id="10" edge="1" parent="1" source="5" target="9" />
+        <mxCell id="12" edge="1" parent="1" source="9" target="11" />
+        <mxCell id="16" edge="1" parent="1" source="11" target="15" />
+        <mxCell id="18" edge="1" parent="1" source="15" target="17" />
+        <mxCell id="20" edge="1" parent="1" source="17" target="19" />
+        <mxCell id="22" edge="1" parent="1" source="19" target="21" />
+        <mxCell id="24" edge="1" parent="1" source="21" target="23" />
+        <mxCell id="26" edge="1" parent="1" source="23" target="25" />
+        <mxCell id="28" edge="1" parent="1" source="25" target="27" />
+        <mxCell id="YCppN0C5aFqJEnqD1uC8-28" value="Start" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-500" y="60" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="YCppN0C5aFqJEnqD1uC8-29" value="today = datetime.now().strftime(&quot;%Y%m%d&quot;)" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-500" y="160" width="220" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="YCppN0C5aFqJEnqD1uC8-30" value="aucRow = db19.execute(text(sql)).fetchone()" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-500" y="260" width="240" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="YCppN0C5aFqJEnqD1uC8-31" value="randingData = db19.execute(text(sql)).fetchone()" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-500" y="360" width="260" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="YCppN0C5aFqJEnqD1uC8-32" value="Adjust year, month, day if dd &lt; 10" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-500" y="460" width="200" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="YCppN0C5aFqJEnqD1uC8-33" value="dd = &#39;09&#39;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-500" y="560" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="YCppN0C5aFqJEnqD1uC8-34" value="Return dictionary with auctionRow, dates, and counts" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-500" y="660" width="300" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="YCppN0C5aFqJEnqD1uC8-35" value="End" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-500" y="760" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="YCppN0C5aFqJEnqD1uC8-63" value="시작" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="131" y="61" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="YCppN0C5aFqJEnqD1uC8-65" edge="1" parent="1" source="YCppN0C5aFqJEnqD1uC8-63" target="YCppN0C5aFqJEnqD1uC8-64" />
+        <mxCell id="YCppN0C5aFqJEnqD1uC8-67" edge="1" parent="1" source="YCppN0C5aFqJEnqD1uC8-64" target="YCppN0C5aFqJEnqD1uC8-66" />
+        <mxCell id="YCppN0C5aFqJEnqD1uC8-71" edge="1" parent="1" source="YCppN0C5aFqJEnqD1uC8-66" target="YCppN0C5aFqJEnqD1uC8-70" />
+        <mxCell id="YCppN0C5aFqJEnqD1uC8-72" value="로그인 상태 확인" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="161" y="561" width="180" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="YCppN0C5aFqJEnqD1uC8-73" edge="1" parent="1" source="YCppN0C5aFqJEnqD1uC8-70" target="YCppN0C5aFqJEnqD1uC8-72" />
+        <mxCell id="YCppN0C5aFqJEnqD1uC8-74" value="샘플데이터 불러오기" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="340" y="380" width="180" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="YCppN0C5aFqJEnqD1uC8-75" edge="1" parent="1" source="YCppN0C5aFqJEnqD1uC8-72">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="340" y="180" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="YCppN0C5aFqJEnqD1uC8-77" edge="1" parent="1" source="YCppN0C5aFqJEnqD1uC8-72" target="YCppN0C5aFqJEnqD1uC8-76" />
+        <mxCell id="YCppN0C5aFqJEnqD1uC8-79" edge="1" parent="1" source="YCppN0C5aFqJEnqD1uC8-76" target="YCppN0C5aFqJEnqD1uC8-78" />
+        <mxCell id="YCppN0C5aFqJEnqD1uC8-80" value="초기 날짜 범위 설정&lt;br&gt;(sdRange, edRange 등)" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="131" y="1131" width="200" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="YCppN0C5aFqJEnqD1uC8-81" edge="1" parent="1" source="YCppN0C5aFqJEnqD1uC8-78" target="YCppN0C5aFqJEnqD1uC8-80" />
+        <mxCell id="YCppN0C5aFqJEnqD1uC8-82" value="PNU 계산" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="191" y="1231" width="200" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="YCppN0C5aFqJEnqD1uC8-83" style="noEdgeStyle=1;" edge="1" parent="1" source="YCppN0C5aFqJEnqD1uC8-80" target="YCppN0C5aFqJEnqD1uC8-82" />
+        <mxCell id="YCppN0C5aFqJEnqD1uC8-84" value="주용도, 비교용도 결정" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="101" y="1321" width="200" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="YCppN0C5aFqJEnqD1uC8-85" style="noEdgeStyle=1;" edge="1" parent="1" source="YCppN0C5aFqJEnqD1uC8-82" target="YCppN0C5aFqJEnqD1uC8-84" />
+        <mxCell id="YCppN0C5aFqJEnqD1uC8-86" value="returnData 초기값 설정" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="161" y="1411" width="200" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="YCppN0C5aFqJEnqD1uC8-87" style="noEdgeStyle=1;" edge="1" parent="1" source="YCppN0C5aFqJEnqD1uC8-84" target="YCppN0C5aFqJEnqD1uC8-86" />
+        <mxCell id="YCppN0C5aFqJEnqD1uC8-89" edge="1" parent="1" source="YCppN0C5aFqJEnqD1uC8-86" target="YCppN0C5aFqJEnqD1uC8-88" />
+        <mxCell id="YCppN0C5aFqJEnqD1uC8-91" value="매각 데이터 초기화\n(returnData[&#39;maegak&#39;] 초기화)" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="590" y="120" width="220" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="YCppN0C5aFqJEnqD1uC8-92" value="주소 범위 설정\n(addr_range 계산)" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="590" y="220" width="200" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="YCppN0C5aFqJEnqD1uC8-93" value="주용도 매각 데이터 계산\n(SQL 실행 및 데이터프레임 처리)" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="590" y="320" width="250" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="YCppN0C5aFqJEnqD1uC8-94" value="주용도 통계 데이터 생성\n(3개월, 6개월, 12개월 요약)" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="590" y="420" width="250" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="YCppN0C5aFqJEnqD1uC8-95" value="비교용도1 매각 데이터 계산\n(SQL 실행 및 데이터프레임 처리)" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="590" y="520" width="260" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="YCppN0C5aFqJEnqD1uC8-96" value="비교용도1 통계 데이터 생성\n(3개월, 6개월, 12개월 요약)" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="590" y="620" width="250" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="YCppN0C5aFqJEnqD1uC8-97" value="비교용도2 매각 데이터 계산\n(SQL 실행 및 데이터프레임 처리)" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="590" y="720" width="260" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="YCppN0C5aFqJEnqD1uC8-98" value="비교용도2 통계 데이터 생성\n(3개월, 6개월, 12개월 요약)" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="590" y="820" width="250" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="YCppN0C5aFqJEnqD1uC8-99" value="최종 매각 데이터 업데이트\n(returnData[&#39;maegak&#39;] 갱신)" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="590" y="920" width="260" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="YCppN0C5aFqJEnqD1uC8-100" value="종료" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="590" y="1020" width="80" height="40" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
