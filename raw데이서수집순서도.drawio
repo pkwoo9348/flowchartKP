@@ -1,9 +1,36 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36" version="26.1.0">
   <diagram name="페이지-1" id="D3kO5CZEnwIqbZIuZdMd">
-    <mxGraphModel dx="1434" dy="746" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1687" dy="878" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="iqqHk56x10kYQnbfeyk_-132" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="790" y="1820" width="360" height="730" as="geometry" />
+        </mxCell>
+        <mxCell id="iqqHk56x10kYQnbfeyk_-114" value="" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="440" y="1880" width="300" height="620" as="geometry" />
+        </mxCell>
+        <mxCell id="iqqHk56x10kYQnbfeyk_-101" value="" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="645" y="850" width="195" height="220" as="geometry" />
+        </mxCell>
+        <mxCell id="iqqHk56x10kYQnbfeyk_-98" value="" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="60" y="1880" width="260" height="270" as="geometry" />
+        </mxCell>
+        <mxCell id="iqqHk56x10kYQnbfeyk_-92" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="710" y="1430" width="230" height="330" as="geometry" />
+        </mxCell>
+        <mxCell id="iqqHk56x10kYQnbfeyk_-85" value="" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="390" y="1430" width="270" height="250" as="geometry" />
+        </mxCell>
+        <mxCell id="iqqHk56x10kYQnbfeyk_-82" value="" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="60" y="1430" width="270" height="380" as="geometry" />
+        </mxCell>
+        <mxCell id="iqqHk56x10kYQnbfeyk_-68" value="" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="340" y="850" width="240" height="420" as="geometry" />
+        </mxCell>
+        <mxCell id="iqqHk56x10kYQnbfeyk_-52" value="" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="60" y="850" width="220" height="420" as="geometry" />
+        </mxCell>
         <mxCell id="iqqHk56x10kYQnbfeyk_-45" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="460" y="220" width="320" height="510" as="geometry" />
         </mxCell>
@@ -117,6 +144,265 @@
         </mxCell>
         <mxCell id="iqqHk56x10kYQnbfeyk_-47" value="파일 업로드 여부 판별 후 다운로드" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
           <mxGeometry x="20" width="210" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="iqqHk56x10kYQnbfeyk_-55" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="iqqHk56x10kYQnbfeyk_-48" target="iqqHk56x10kYQnbfeyk_-49">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="iqqHk56x10kYQnbfeyk_-48" value="범위: 1,7월 =&amp;gt; 12&lt;br&gt;else =&amp;gt; 3" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="80" y="880" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="iqqHk56x10kYQnbfeyk_-56" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="iqqHk56x10kYQnbfeyk_-49" target="iqqHk56x10kYQnbfeyk_-50">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="iqqHk56x10kYQnbfeyk_-49" value="실거래가 다운로드 사이트에서 범위 내 돌면서 다운로드" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="80" y="980" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="iqqHk56x10kYQnbfeyk_-57" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="iqqHk56x10kYQnbfeyk_-50" target="iqqHk56x10kYQnbfeyk_-51">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="iqqHk56x10kYQnbfeyk_-50" value="excel 파일 각각 읽고 csv 변환" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="80" y="1080" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="iqqHk56x10kYQnbfeyk_-51" value="해당 연월 거래데이터 삭제 후 csv 파일 읽어 db 저장" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="80" y="1169" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="iqqHk56x10kYQnbfeyk_-53" value="실거래가 다운로드 및 db 저장" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="60" y="820" width="180" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="iqqHk56x10kYQnbfeyk_-64" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="iqqHk56x10kYQnbfeyk_-54" target="iqqHk56x10kYQnbfeyk_-61">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="iqqHk56x10kYQnbfeyk_-54" value="새로 insert 한 실거래 row 가져오기" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="390" y="880" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="iqqHk56x10kYQnbfeyk_-58" value="매월 1,2일" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="200" y="850" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="iqqHk56x10kYQnbfeyk_-59" value="매일" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="290" y="30" width="50" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="iqqHk56x10kYQnbfeyk_-60" value="지번 찾아야 하는 데이터&lt;div&gt;(토지,단독다가구, 공업, 상업)&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="380" y="810" width="180" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="iqqHk56x10kYQnbfeyk_-65" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="iqqHk56x10kYQnbfeyk_-61" target="iqqHk56x10kYQnbfeyk_-62">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="iqqHk56x10kYQnbfeyk_-61" value="토지정보, 건물정보 지역별/연도별 가져오기" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="390" y="980" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="iqqHk56x10kYQnbfeyk_-66" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="iqqHk56x10kYQnbfeyk_-62" target="iqqHk56x10kYQnbfeyk_-63">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="iqqHk56x10kYQnbfeyk_-62" value="step1,2,3 depth별 실거래와 raw데이터 비교" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="390" y="1080" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="iqqHk56x10kYQnbfeyk_-67" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="iqqHk56x10kYQnbfeyk_-63">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="470" y="960" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="470" y="1249" />
+              <mxPoint x="360" y="1249" />
+              <mxPoint x="360" y="960" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="iqqHk56x10kYQnbfeyk_-63" value="지번 찾은 데이터 저장" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="390" y="1169" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="iqqHk56x10kYQnbfeyk_-69" value="X,Y좌표값 카카오api 호출해서 저장" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="660" y="980" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="iqqHk56x10kYQnbfeyk_-70" value="용도정리 프로세스" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="720" y="850" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="iqqHk56x10kYQnbfeyk_-102" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="iqqHk56x10kYQnbfeyk_-71" target="iqqHk56x10kYQnbfeyk_-69">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="iqqHk56x10kYQnbfeyk_-71" value="평단가, 시도, 시구군, 읍면동, 리 계산 및 저장" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="660" y="878" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="iqqHk56x10kYQnbfeyk_-77" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="iqqHk56x10kYQnbfeyk_-72" target="iqqHk56x10kYQnbfeyk_-73">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="iqqHk56x10kYQnbfeyk_-72" value="유저데이터 테이블 마지막 idx값 가져오기 (Table_status)" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="90" y="1480" width="200" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="iqqHk56x10kYQnbfeyk_-79" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="iqqHk56x10kYQnbfeyk_-73" target="iqqHk56x10kYQnbfeyk_-74">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="iqqHk56x10kYQnbfeyk_-73" value="유저데이터 테이블 마지막 idx값 가져오기 (Table_status)" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="90" y="1600" width="200" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="iqqHk56x10kYQnbfeyk_-74" value="실제 운영 DB에서 테이블 별 autoincrease 컬럼 기존 idx값 보다 큰 row 가져와서 저장" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="90" y="1723.5" width="200" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="iqqHk56x10kYQnbfeyk_-80" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="iqqHk56x10kYQnbfeyk_-75" target="iqqHk56x10kYQnbfeyk_-76">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="iqqHk56x10kYQnbfeyk_-75" value="실제 운영 DB에서 해당 테이블 전체 가져와 update_... 테이블 저장" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="425" y="1470" width="200" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="iqqHk56x10kYQnbfeyk_-76" value="uipdate_...테이블과 merge" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="425" y="1590" width="200" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="iqqHk56x10kYQnbfeyk_-83" value="누적 데이터 (5분마다 실행)" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="160" y="1430" width="170" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="iqqHk56x10kYQnbfeyk_-86" value="변동 데이터 (매일 실행)" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="510" y="1430" width="150" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="iqqHk56x10kYQnbfeyk_-90" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="iqqHk56x10kYQnbfeyk_-87" target="iqqHk56x10kYQnbfeyk_-88">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="iqqHk56x10kYQnbfeyk_-87" value="유저 별 최근 접속, 결제, 이용빈도 각각 가져오기" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="740" y="1470" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="iqqHk56x10kYQnbfeyk_-91" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="iqqHk56x10kYQnbfeyk_-88" target="iqqHk56x10kYQnbfeyk_-89">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="iqqHk56x10kYQnbfeyk_-88" value="상위 % 별 점수 책정" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="740" y="1570" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="iqqHk56x10kYQnbfeyk_-89" value="점수에 따른 등급 책정 후 저장" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="740" y="1670" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="iqqHk56x10kYQnbfeyk_-93" value="유저 RFM등급(매일 실행)" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="780" y="1430" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="iqqHk56x10kYQnbfeyk_-97" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="iqqHk56x10kYQnbfeyk_-95" target="iqqHk56x10kYQnbfeyk_-96">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="iqqHk56x10kYQnbfeyk_-95" value="실거래 주소, xy 테이블 join" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="90" y="1920" width="200" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="iqqHk56x10kYQnbfeyk_-96" value="테이블 별 컬럼 값 조정하여 저장" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="90" y="2040" width="200" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="iqqHk56x10kYQnbfeyk_-100" value="실거래가 지도검색용(매월 9일)" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="120" y="1880" width="190" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="iqqHk56x10kYQnbfeyk_-111" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="iqqHk56x10kYQnbfeyk_-105" target="iqqHk56x10kYQnbfeyk_-107">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="iqqHk56x10kYQnbfeyk_-105" value="수신한 지역 매각 통계 추출, 계산" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="480" y="2040" width="200" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="iqqHk56x10kYQnbfeyk_-110" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="iqqHk56x10kYQnbfeyk_-106" target="iqqHk56x10kYQnbfeyk_-105">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="iqqHk56x10kYQnbfeyk_-106" value="지번 및 xy 좌표 수신&amp;nbsp;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="480" y="1920" width="200" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="iqqHk56x10kYQnbfeyk_-112" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="iqqHk56x10kYQnbfeyk_-107" target="iqqHk56x10kYQnbfeyk_-108">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="iqqHk56x10kYQnbfeyk_-107" value="수신한 지역 실거래 통계 추출, 계산" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="480" y="2160" width="200" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="iqqHk56x10kYQnbfeyk_-113" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="iqqHk56x10kYQnbfeyk_-108" target="iqqHk56x10kYQnbfeyk_-109">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="iqqHk56x10kYQnbfeyk_-108" value="1km이내 인근 사례 추출" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="480" y="2278" width="200" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="iqqHk56x10kYQnbfeyk_-109" value="수신한 지번, 인근 사례 부동산 정보 추출 후 return 데이터 송신&amp;nbsp;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="480" y="2400" width="200" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="iqqHk56x10kYQnbfeyk_-115" value="프로바이저 통계 api 백엔드" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="570" y="1880" width="170" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="iqqHk56x10kYQnbfeyk_-117" value="100만 줄씩 토지 임야 정보 추출&lt;br&gt;토지 지목별 용도 나눔" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="886.94" y="1980" width="200" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="iqqHk56x10kYQnbfeyk_-124" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="iqqHk56x10kYQnbfeyk_-117" target="iqqHk56x10kYQnbfeyk_-119">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="986.94" y="2160" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="iqqHk56x10kYQnbfeyk_-125" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="iqqHk56x10kYQnbfeyk_-119" target="iqqHk56x10kYQnbfeyk_-117">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="986.94" y="2180" />
+              <mxPoint x="826.94" y="2180" />
+              <mxPoint x="826.94" y="1960" />
+              <mxPoint x="986.94" y="1960" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="iqqHk56x10kYQnbfeyk_-127" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="iqqHk56x10kYQnbfeyk_-119" target="iqqHk56x10kYQnbfeyk_-126">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="iqqHk56x10kYQnbfeyk_-119" value="업데이트 테이블 저장" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="886.94" y="2100" width="200" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="iqqHk56x10kYQnbfeyk_-121" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="iqqHk56x10kYQnbfeyk_-120" target="iqqHk56x10kYQnbfeyk_-117">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="iqqHk56x10kYQnbfeyk_-120" value="업데이트 테이블 truncate&amp;nbsp;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="886.94" y="1860" width="200" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="iqqHk56x10kYQnbfeyk_-129" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="iqqHk56x10kYQnbfeyk_-126" target="iqqHk56x10kYQnbfeyk_-128">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="iqqHk56x10kYQnbfeyk_-126" value="기존 테이블 merge" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="886.94" y="2218" width="200" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="iqqHk56x10kYQnbfeyk_-131" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="iqqHk56x10kYQnbfeyk_-128" target="iqqHk56x10kYQnbfeyk_-130">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="iqqHk56x10kYQnbfeyk_-128" value="건물데이터(표제부) 주 용도로 지번 용도 나눔" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="886.94" y="2340" width="200" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="iqqHk56x10kYQnbfeyk_-130" value="기존 테이블 merge" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="886.94" y="2460" width="200" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="iqqHk56x10kYQnbfeyk_-133" value="지번별 용도 정리" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="1040" y="1820" width="110" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="iqqHk56x10kYQnbfeyk_-134" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1250" y="1820" width="360" height="610" as="geometry" />
+        </mxCell>
+        <mxCell id="iqqHk56x10kYQnbfeyk_-135" value="토지 소유권 변동일, 내용, 포함용도지역코드 등 프로바이저 부동산 추가정보 저장" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1346.94" y="1980" width="200" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="iqqHk56x10kYQnbfeyk_-136" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" source="iqqHk56x10kYQnbfeyk_-135" target="iqqHk56x10kYQnbfeyk_-139" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1446.94" y="2160" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="iqqHk56x10kYQnbfeyk_-138" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" source="iqqHk56x10kYQnbfeyk_-139" target="iqqHk56x10kYQnbfeyk_-143" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="iqqHk56x10kYQnbfeyk_-139" value="토지소유 개인,법인, 외국인 카운트 정보 업데이트" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1346.94" y="2100" width="200" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="iqqHk56x10kYQnbfeyk_-140" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" source="iqqHk56x10kYQnbfeyk_-141" target="iqqHk56x10kYQnbfeyk_-135" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="iqqHk56x10kYQnbfeyk_-141" value="토지 상세 테이블 truncate" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1346.94" y="1860" width="200" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="iqqHk56x10kYQnbfeyk_-142" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" source="iqqHk56x10kYQnbfeyk_-143" target="iqqHk56x10kYQnbfeyk_-145" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="iqqHk56x10kYQnbfeyk_-143" value="업데이트 테이블 지번 별 지역테마 저장" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1346.94" y="2218" width="200" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="iqqHk56x10kYQnbfeyk_-145" value="기존 테이블 merge" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1346.94" y="2340" width="200" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="iqqHk56x10kYQnbfeyk_-147" value="토지 상세 정보" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="1505" y="1820" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="iqqHk56x10kYQnbfeyk_-148" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="iqqHk56x10kYQnbfeyk_-135" target="iqqHk56x10kYQnbfeyk_-135">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1447" y="2060" />
+              <mxPoint x="1290" y="2060" />
+              <mxPoint x="1290" y="1960" />
+              <mxPoint x="1447" y="1960" />
+            </Array>
+          </mxGeometry>
         </mxCell>
       </root>
     </mxGraphModel>
