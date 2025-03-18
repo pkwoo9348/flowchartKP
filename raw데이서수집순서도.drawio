@@ -212,8 +212,8 @@
         <mxCell id="iqqHk56x10kYQnbfeyk_-69" value="X,Y좌표값 카카오api 호출해서 저장" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="660" y="980" width="160" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="iqqHk56x10kYQnbfeyk_-70" value="용도정리 프로세스" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
-          <mxGeometry x="720" y="850" width="120" height="30" as="geometry" />
+        <mxCell id="iqqHk56x10kYQnbfeyk_-70" value="실거래 추가 데이터" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="715" y="850" width="130" height="30" as="geometry" />
         </mxCell>
         <mxCell id="iqqHk56x10kYQnbfeyk_-102" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="iqqHk56x10kYQnbfeyk_-71" target="iqqHk56x10kYQnbfeyk_-69">
           <mxGeometry relative="1" as="geometry" />
