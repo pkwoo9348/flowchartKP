@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36" version="26.1.0">
   <diagram name="페이지-1" id="D3kO5CZEnwIqbZIuZdMd">
-    <mxGraphModel dx="1687" dy="878" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1434" dy="746" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -14,7 +14,7 @@
           <mxGeometry x="645" y="850" width="195" height="220" as="geometry" />
         </mxCell>
         <mxCell id="iqqHk56x10kYQnbfeyk_-98" value="" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="60" y="1880" width="260" height="270" as="geometry" />
+          <mxGeometry x="1000" y="1430" width="260" height="270" as="geometry" />
         </mxCell>
         <mxCell id="iqqHk56x10kYQnbfeyk_-92" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="710" y="1430" width="230" height="330" as="geometry" />
@@ -273,13 +273,13 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="iqqHk56x10kYQnbfeyk_-95" value="실거래 주소, xy 테이블 join" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="90" y="1920" width="200" height="60" as="geometry" />
+          <mxGeometry x="1030" y="1470" width="200" height="60" as="geometry" />
         </mxCell>
         <mxCell id="iqqHk56x10kYQnbfeyk_-96" value="테이블 별 컬럼 값 조정하여 저장" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="90" y="2040" width="200" height="60" as="geometry" />
+          <mxGeometry x="1030" y="1590" width="200" height="60" as="geometry" />
         </mxCell>
         <mxCell id="iqqHk56x10kYQnbfeyk_-100" value="실거래가 지도검색용(매월 9일)" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
-          <mxGeometry x="120" y="1880" width="190" height="30" as="geometry" />
+          <mxGeometry x="1060" y="1430" width="190" height="30" as="geometry" />
         </mxCell>
         <mxCell id="iqqHk56x10kYQnbfeyk_-111" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="iqqHk56x10kYQnbfeyk_-105" target="iqqHk56x10kYQnbfeyk_-107">
           <mxGeometry relative="1" as="geometry" />
