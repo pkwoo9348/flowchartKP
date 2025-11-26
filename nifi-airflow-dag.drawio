@@ -1,0 +1,104 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36" version="29.1.1">
+  <diagram name="페이지-1" id="-RKXLmoWD63frDlvUsRY">
+    <mxGraphModel dx="788" dy="454" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="Vbx4Hl433s0QintIzdZe-34" edge="1" parent="1" style="html=1;verticalAlign=bottom;endArrow=classic;endSize=8;curved=0;rounded=0;exitX=0;exitY=1;exitDx=0;exitDy=-5;endFill=1;startArrow=classic;startFill=1;startSize=8;" target="Vbx4Hl433s0QintIzdZe-35" value="ETL 대상 테이블 요청">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="455" y="149" as="sourcePoint" />
+            <mxPoint x="310" y="150" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Vbx4Hl433s0QintIzdZe-16" parent="1" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};" value="Airflow" vertex="1">
+          <mxGeometry height="560" width="120" x="400" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="Vbx4Hl433s0QintIzdZe-32" parent="Vbx4Hl433s0QintIzdZe-16" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" value="" vertex="1">
+          <mxGeometry height="490" width="10" x="55" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="Vbx4Hl433s0QintIzdZe-43" edge="1" parent="Vbx4Hl433s0QintIzdZe-16" style="html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;edgeStyle=orthogonalEdgeStyle;curved=0;rounded=0;" value="소스 타겟 컬럼&amp;nbsp;&lt;div&gt;매칭만 남기기&lt;/div&gt;">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="90" y="252" />
+              <mxPoint x="90" y="272" />
+            </Array>
+            <mxPoint x="65" y="252" as="sourcePoint" />
+            <mxPoint x="65" y="272" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Vbx4Hl433s0QintIzdZe-17" parent="1" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};" value="Nifi" vertex="1">
+          <mxGeometry height="560" width="120" x="560" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="Vbx4Hl433s0QintIzdZe-36" parent="Vbx4Hl433s0QintIzdZe-17" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" value="" vertex="1">
+          <mxGeometry height="50" width="10" x="56" y="132" as="geometry" />
+        </mxCell>
+        <mxCell id="Vbx4Hl433s0QintIzdZe-44" parent="Vbx4Hl433s0QintIzdZe-17" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" value="" vertex="1">
+          <mxGeometry height="115" width="10" x="56" y="327" as="geometry" />
+        </mxCell>
+        <mxCell id="Vbx4Hl433s0QintIzdZe-18" parent="1" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" value="운영 DB" vertex="1">
+          <mxGeometry height="560" width="120" x="240" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="Vbx4Hl433s0QintIzdZe-35" parent="Vbx4Hl433s0QintIzdZe-18" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" value="" vertex="1">
+          <mxGeometry height="30" width="10" x="55" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Vbx4Hl433s0QintIzdZe-23" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="dag run" vertex="1">
+          <mxGeometry height="30" width="60" x="470" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="Vbx4Hl433s0QintIzdZe-30" parent="1" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" value="소스, 타겟 DB" vertex="1">
+          <mxGeometry height="560" width="120" x="80" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="Vbx4Hl433s0QintIzdZe-39" parent="Vbx4Hl433s0QintIzdZe-30" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" value="" vertex="1">
+          <mxGeometry height="40" width="10" x="55" y="192" as="geometry" />
+        </mxCell>
+        <mxCell id="Vbx4Hl433s0QintIzdZe-40" edge="1" parent="Vbx4Hl433s0QintIzdZe-30" style="html=1;verticalAlign=bottom;endArrow=classic;curved=0;rounded=0;entryX=1;entryY=0;entryDx=0;entryDy=5;endFill=1;startArrow=classic;startFill=1;" value="소스, 타겟 테이블 컬럼 정보 요청">
+          <mxGeometry relative="1" x="0.0011" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="375" y="204.0000000000001" as="sourcePoint" />
+            <mxPoint x="65" y="204" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Vbx4Hl433s0QintIzdZe-37" edge="1" parent="1" style="html=1;verticalAlign=bottom;endArrow=classic;curved=0;rounded=0;entryX=0;entryY=0;entryDx=0;entryDy=5;startArrow=classic;startFill=1;endFill=1;" value="Parameter, variable 요청">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="465" y="227" as="sourcePoint" />
+            <mxPoint x="615.9999999999998" y="227" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Vbx4Hl433s0QintIzdZe-45" edge="1" parent="1" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;entryX=0;entryY=0;entryDx=0;entryDy=5;" value="variable 수정,&amp;nbsp;&lt;div&gt;ProcessGroup 실행&lt;/div&gt;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="465" y="419" as="sourcePoint" />
+            <mxPoint x="615.9999999999998" y="419" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Vbx4Hl433s0QintIzdZe-47" edge="1" parent="1" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;entryX=0;entryY=0;entryDx=0;entryDy=5;" value="variable 수정,&amp;nbsp;&lt;div&gt;ProcessGroup 실행&lt;/div&gt;">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="540" y="419" />
+            </Array>
+            <mxPoint x="465" y="419" as="sourcePoint" />
+            <mxPoint x="615.9999999999998" y="419" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Vbx4Hl433s0QintIzdZe-48" edge="1" parent="1" style="html=1;verticalAlign=bottom;endArrow=block;rounded=0;startArrow=block;startFill=1;" value="ProcessGroup내부&amp;nbsp;&lt;div&gt;&lt;span style=&quot;background-color: light-dark(#ffffff, var(--ge-dark-color, #121212)); color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;active threads,&amp;nbsp;&lt;/span&gt;&lt;div&gt;&lt;span style=&quot;background-color: light-dark(#ffffff, var(--ge-dark-color, #121212)); color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;queue list 갯수 요청&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="465" y="478" as="sourcePoint" />
+            <mxPoint x="615.9999999999998" y="478" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Vbx4Hl433s0QintIzdZe-53" parent="1" style="swimlane;startSize=0;" value="" vertex="1">
+          <mxGeometry height="100" width="220" x="440" y="432" as="geometry">
+            <mxRectangle height="40" width="50" x="520" y="530" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Vbx4Hl433s0QintIzdZe-54" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="0이 될때까지 loop" vertex="1">
+          <mxGeometry height="30" width="120" x="470" y="512" as="geometry" />
+        </mxCell>
+        <mxCell id="Vbx4Hl433s0QintIzdZe-55" parent="1" style="swimlane;startSize=0;" value="" vertex="1">
+          <mxGeometry height="390" width="590" x="110" y="180" as="geometry" />
+        </mxCell>
+        <mxCell id="Vbx4Hl433s0QintIzdZe-56" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="ETL대상 테이블 순회" vertex="1">
+          <mxGeometry height="30" width="140" x="150" y="180" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
